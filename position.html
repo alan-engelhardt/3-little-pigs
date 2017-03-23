@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>positioning</title>
+	<style>
+		#scene{
+			position: relative;
+			width: 900px;
+			height: 600px;
+			border: solid 1px;
+			background-color: #DEF;
+		}
+
+		div{
+			position: absolute;
+			background-size: cover;
+		}
+
+		#pig1, #pig2, #pig3{
+			width: 90px;
+			height: 115px;
+		}
+
+		#pig1{
+			background-image: url("3pigs/pig1.gif");
+		}
+
+		#pig2{
+			background-image: url("3pigs/pig2.gif");
+		}
+
+		#pig3{
+			background-image: url("3pigs/pig3.gif");
+		}
+
+		#wolf{
+			width: 100px;
+			height: 159px;
+			background-image: url("3pigs/wolf.png");
+		}
+
+		#house{
+			width: 250px;
+			height: 250px;
+			background-image: url("3pigs/house.png");
+		}
+	</style>
+</head>
+
+<body>
+	<main id="scene">
+		<div id="house"></div>
+		<div id="pig1"></div>
+		<div id="pig2"></div>
+		<div id="pig3"></div>
+		<div id="wolf"></div>
+	</main>
+	<script></script>
+</body>
+
+</html>
