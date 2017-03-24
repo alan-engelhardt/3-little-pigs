@@ -2,6 +2,7 @@ let piggy1 = document.querySelector("#pig1");
 let piggy2 = document.querySelector("#pig2");
 let piggy3 = document.querySelector("#pig3");
 let wolf = document.querySelector("#wolf");
+let scary = document.querySelector("audio#scary");
 
 
 function ready(){
@@ -30,7 +31,9 @@ function onceSoundDone(){
     console.log("Step: Scream");
 
     console.log("Step: scary music");
-    wolfHasEntered();
+    //scary.play();
+    scary.volume=0.1;
+    wolf.addEventListener('animationend', wolfHasEntered)
 }
 
 function wolfHasEntered(){
