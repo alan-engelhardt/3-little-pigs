@@ -53,6 +53,25 @@
 			height: 250px;
 			background-image: url("images/house.gif");
 		}
+        .wiggle {
+            animation: wiggle 1s alternate infinite;
+        }
+        @keyframes wiggle {
+            from {
+                transform: rotate(-15deg);
+            }
+            to {
+                transform: rotate(15deg);
+            }
+        }
+        .wolfEnters {
+            animation: wolfEnters 2s forwards;
+        }
+        @keyframes wolfEnters {
+            to {
+                transform: translate(250px)
+            }
+        }
 	</style>
 </head>
 
@@ -64,7 +83,10 @@
 		<div id="pig3"></div>
 		<div id="wolf"></div>
 	</main>
-	<script></script>
+	<audio id="once" preload="auto">
+	    <source src="audio/once.mp3">
+	</audio>
+	<script src="js/3pigs.js"></script>
 </body>
 
 </html>
